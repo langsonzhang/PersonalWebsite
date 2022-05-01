@@ -21,7 +21,6 @@
 .video-container {
     position: relative;
     overflow: hidden;
-    /* pointer-events: none; */
     /* height: 0; */
     padding-bottom: 56.25%; /* calculate by aspect ratio (h / w * 100%) */
 }
