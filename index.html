@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="altstyles.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <script src="/p5/p5.min.js"></script> -->
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <!-- <script src="/sketch.js"></script> -->
+</head>
+
+<body>
+  <div class="video-container">
+    <video id="video" autoplay loop>
+      <source src="images/video.mp4" type="video/mp4">
+      <script>
+        var hueVal = 0
+        var blurVal = "0px"
+        var contrastVal = "80%"
+  
+        var video = document.getElementById("video")
+        video.addEventListener('mousemove', updateFilters)
+        updateFilters()
+  
+        function updateFilters(event) {
+          var filterVal = `hue-rotate(${Math.floor(hueVal/15)%360}deg) contrast(${contrastVal}) blur(${blurVal})`
+          video.style.filter = filterVal
+          hueVal--
+        }
+      </script>
+    </video>
+  </div>
+  
+  <header id="title-block-header">
+    <h1 class="title">Langson Zhang</h1>
+    <div style="text-align: left"><b>University of Toronto (UofT)</b></div>
+    <div style="text-align: left"><b>Email: </b>langson.zhang@mail.utoronto.ca</div>
+    <h4>[about] | <a href="projects/index.html">[projects]</a> |
+      <a href="cv.pdf">[cv]</a>
+    </h4>
+    <hr>
+    <h2 class="subtitle"></h2>
+  </header>
+
+  <h2 id="about-me">About Me</h2>
+  <p>I’m finishing up my undergraduate degree in <a href="https://cs.toronto.edu">computer science</a> at the <a
+      href="https://utoronto.ca"><strong>University of Toronto
+        (UofT)</strong></a>. My areas of interest include deep learning, machine
+    learning theory, discrete mathematics, and operating systems. Lately,
+    I’ve been working in automated machine learning (AutoML), continual
+    learning (CL) and machine learning theory. I was previously a software
+    engineer, recently at <a href="https://aws.amazon.com"><strong>Amazon
+        Web Services (AWS)</strong></a>. Sometimes I’m a <a href="#teaching-taships-uoft">teaching assistant (TA)</a> in
+    computer
+    science and mathematics. In September 2022, I’ll start my Master of
+    Science (MSc) degree at UofT with <a href="https://sites.google.com/view/vardan-papyan/home">Prof.&nbsp;Vardan
+      Papyan</a>.</p>
+  <p>Find me on <a href="https://discord.com/invite/QrT4w8Qyx2">Discord</a>!</p>
+  <h3 id="affiliations">Affiliations</h3>
+  <ul>
+    <li><a href="https://mlcollective.org">ML Collective (MLC)</a></li>
+    <li><a href="https://rvl.cs.toronto.edu">Robot Vision &amp; Learning
+        (RVL) Lab</a></li>
+    <li><a href="https://utmist.gitlab.io/team/research">Automated Machine
+        Learning Group (AutoMLG) @ UTMIST</a></li>
+    <li><a href="https://cssu.ca">Computer Science Student Union
+        (CSSU)</a></li>
+    <li><a href="https://www.vic.utoronto.ca/about-victoria/victoria-college-council/">Victoria
+        College Council (VCC)</a></li>
+  </ul>
+  <h3 id="socials-twitter-github-linkedin">Socials: <a href="https://twitter.com/RupertOrRobert">[twitter]</a> | <a
+      href="https://github.com/rusbridger">[github]</a> | <a
+      href="https://www.linkedin.com/in/wu-robert/">[linkedin]</a></h3>
+  <hr>
+  <h2 id="publicationsprojects-scholar-more">Publications/Projects: <a
+      href="https://scholar.google.com/citations?user=13wUv3QAAAAJ">[scholar]</a>
+    | <a href="projects/index.html">[more]</a></h2>
+  <ol type="1">
+    <li><strong>Towards One Shot Search Space Poisoning in Neural
+        Architecture Search</strong><br> <a href="https://uoft.me/nayan">Nayan
+        Saxena</a>, <strong>Robert Wu</strong> &amp; Rohan Jain<br> <em>AAAI
+        2022 (Student Abstract &amp; Poster Program)</em><br> <a
+        href="https://arxiv.org/abs/2111.07138"><strong>[pre-print]</strong></a>
+      <a href="https://github.com/rusbridger/ENAS-Experiments"><strong>[code]</strong></a>
+      <a href="https://github.com/rusbridger/enas_poisoning"><strong>[experiments]</strong></a>
+    </li>
+    <li><strong>NeuralArTS: Structuring Neural Architecture Search with Type
+        Theory</strong><br> <strong>Robert Wu</strong>, <a href="https://uoft.me/nayan">Nayan Saxena</a> &amp; Rohan
+      Jain<br>
+      <em>AAAI 2022 (Student Abstract &amp; Poster Program)</em>
+      <strong class="warning">(top 20, oral)</strong><br> <a
+        href="https://arxiv.org/abs/2110.08710"><strong>[pre-print]</strong></a>
+      <a href="https://github.com/rusbridger/ENAS-Experiments"><strong>[code]</strong></a>
+      <a href="https://github.com/rusbridger/enas_types"><strong>[experiments]</strong></a>
+    </li>
+    <li><strong>Poisoning the Search Space in Neural Architecture
+        Search</strong><br> <strong>Robert Wu*</strong>, <a href="https://uoft.me/nayan">Nayan Saxena</a>* &amp; Rohan
+      Jain*<br>
+      <em>AdvML Workshop @ ICML 2021</em><br> <a
+        href="https://openreview.net/forum?id=fB3z4GrHCYv"><strong>[paper]</strong></a>
+      <a
+        href="https://icml.cc/media/PosterPDFs/ICML%202021/d67d8ab4f4c10bf22aa353e27879133c_Q3G0umv.png"><strong>[poster]</strong></a>
+      <a href="https://arxiv.org/abs/2106.14406"><strong>[pre-print]</strong></a>
+      <a href="https://github.com/rusbridger/ENAS-Experiments"><strong>[code]</strong></a>
+      <a href="https://github.com/rusbridger/enas_poisoning"><strong>[experiments]</strong></a>
+    </li>
+  </ol>
+  <p>(* equal contribution)</p>
+  <hr>
+  <h2 id="teaching-taships-uoft">Teaching (TAships @ UofT)</h2>
+  <ul>
+    <li><strong><a href="https://artsci.calendar.utoronto.ca/course/csc412h1">CSC412/2506H1</a>:
+        Probabilistic Learning &amp; Reasoning</strong> <em>(Winter
+        2022)</em></li>
+    <li><strong><a href="https://utm.calendar.utoronto.ca/course/csc413h5">CSC413H5</a>:
+        Neural Networks &amp; Deep Learning</strong> <em>(Winter 2022)</em></li>
+    <li><strong><a href="https://utm.calendar.utoronto.ca/course/csc311h5">CSC311H5</a>:
+        Introduction to Machine Learning</strong> <em>(Fall 2021)</em></li>
+    <li><strong><a href="https://artsci.calendar.utoronto.ca/course/csc165h1">CSC165H1</a>:
+        Mathematics for Computer Science</strong> <em>(Winter 2020, Winter
+        2021)</em></li>
+    <li><strong><a href="https://utsc.calendar.utoronto.ca/course/csca67h3">CSC/MATA67H3</a>:
+        Discrete Mathematics</strong> <em>(Fall 2019)</em></li>
+    <li><strong><a href="https://utsc.calendar.utoronto.ca/course/csca08h3">CSCA08H3</a>:
+        Introduction to Computer Science I</strong> <em>(Fall 2018)</em></li>
+  </ul>
+  <hr>
+  <footer>
+    <h4>[about] | <a href="projects/index.html">[projects]</a> |
+      <a href="cv.pdf">[cv]</a>
+    </h4>
+  </footer>
+  <br>
+
+
+</body>
+
+</html>

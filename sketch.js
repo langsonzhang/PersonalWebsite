@@ -1,0 +1,17 @@
+t=0;n=40,m=100;
+draw=_=>{
+  createCanvas(W=540,W,WEBGL)
+clear(t+=.04)
+background(0)
+  translate(0,-100);rotateX(.3);rotateZ(TAU*t/n);
+  for(j=0;j<=n;j++){
+    rotateZ(TAU/n)
+    for(i=0;i<m;i++){
+     push() 
+     d=i/m
+     translate(400*(c=1-d),0,-20*i)
+     fill(300*c)
+     circle(10,17*sin((2*(j%2)-1)*(TAU*t+70*d)),6*(1-d*d))
+     pop()}
+    } 
+}

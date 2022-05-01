@@ -1,0 +1,32 @@
+.title_img {
+    /* border-radius: 15pt; */
+    width: 100%;
+    height: auto;
+    max-width: 1000pt;
+}
+
+#video{
+    /* -webkit-filter: blur(80px); */
+    /* filter: blur(0px) contrast(85%) hue-rotate(90deg); */
+
+    /* position: absolute; */
+    /* top: -187px;  */
+    /* left: 0px;  */
+    /* width: 150%;  */
+    /* height: 1000px; */
+    /* height: auto; */
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 56.25%; /* calculate by aspect ratio (h / w * 100%) */
+}
+.video-container #video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
