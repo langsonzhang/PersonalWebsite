@@ -12,28 +12,35 @@
 </head>
 
 <body>
-  <div class="video-container">
-    <video id="video" autoplay loop>
+  <div class="video-container" id="cont1">
+    <video id="video" playsinline autoplay muted loop>
       <source src="images/video.mp4" type="video/mp4">
+
       <script>
         var hueVal = 0
         var blurVal = "0px"
         var contrastVal = "82%"
-  
+        var invertVal = "0%"
+        var brightnessVal = "120%"
+    
         var video = document.getElementById("video")
-        video.addEventListener('mousemove', updateFilters)
+        var videoCont = document.getElementById("cont1")
+        videoCont.addEventListener('mousemove', updateFilters)
+        // video.addEventListener('mousemove', updateFilters)
         updateFilters()
-  
+    
         function updateFilters(event) {
-          var filterVal = `hue-rotate(${Math.floor(hueVal/15)%360}deg) contrast(${contrastVal}) blur(${blurVal})`
+          var filterVal = `hue-rotate(${Math.floor(hueVal / 15) % 360}deg)`
+          filterVal += `brightness(${brightnessVal}) contrast(${contrastVal}) blur(${blurVal}) saturate(110%) invert(${invertVal})`
           video.style.filter = filterVal
           hueVal--
         }
       </script>
     </video>
   </div>
-  
-  <header id="title-block-header">
+
+
+  <!-- <header id="title-block-header">
     <h1 class="title">Langson Zhang</h1>
     <div style="text-align: left"><b>University of Toronto (UofT)</b></div>
     <div style="text-align: left"><b>Email: </b>langson.zhang@mail.utoronto.ca</div>
@@ -132,7 +139,7 @@
       <a href="cv.pdf">[cv]</a>
     </h4>
   </footer>
-  <br>
+  <br> -->
 
 
 </body>
