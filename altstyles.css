@@ -65,15 +65,15 @@
 }
 
 .large{
-    font-size: 12vmin;
+    font-size: 9vw;
 }
 
 .medium {
-    font-size: 3vmin;
+    font-size: 2.5vw;
 }
 
 .white {
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.88);
 }
 
 .shadowed {
