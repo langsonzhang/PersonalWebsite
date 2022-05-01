@@ -58,14 +58,18 @@
     justify-content: center;
     flex-flow: column nowrap;
     position: absolute;
-    height: 70%;
+    top: -4vh;
+    height: 100%;
     width: 100%;
-    align-items: center;
     z-index:1;
 }
 
-.large-title {
-    font-size: 8vw;
+.large{
+    font-size: 12vmin;
+}
+
+.medium {
+    font-size: 3vmin;
 }
 
 .white {
@@ -74,6 +78,10 @@
 
 .shadowed {
     text-shadow: black 1px 0 10px;
+}
+
+.small-margin {
+    margin: 15px;
 }
 
 header {

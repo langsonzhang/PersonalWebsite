@@ -2,7 +2,7 @@ var hueVal = 0
 var blurVal = "0px"
 var contrastVal = "100%"
 var invertVal = "15%"
-var brightnessVal = "120%"
+var brightnessVal = "110%"
 
 var video = document.getElementById("video")
 var videoCont = document.getElementById("cont1")
