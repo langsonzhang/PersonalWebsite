@@ -12,33 +12,30 @@
 </head>
 
 <body>
-  <div class="video-container" id="cont1">
-    <video id="video" playsinline autoplay muted loop>
-      <source src="images/video.mp4" type="video/mp4">
-    </video>
+  <header>
+    asdf
+  </header>
+
+
+  <div class="top">
+    <div class="video-container" id="cont1">
+      <video id="video" playsinline autoplay muted loop>
+        <source src="images/video.mp4" type="video/mp4">
+      </video>
+      <div class="overlay">
+        <h1 class="large-title white shadowed">Langson Zhang</h1>
+      </div>
+      <!-- <div class="sentence inner fader-title faded-title">
+        <h1>Langson Zhang</h1>
+      </div>
+      <h1>Powering Imagination</h1>
+      <div class="sentence inner fader-title faded-title">
+        <h1>Powering Imagination</h1>
+      </div> -->
+  
+    </div>
   </div>
-
-  <script>
-    var hueVal = 0
-    var blurVal = "0px"
-    var contrastVal = "82%"
-    var invertVal = "0%"
-    var brightnessVal = "120%"
-
-    var video = document.getElementById("video")
-    var videoCont = document.getElementById("cont1")
-    videoCont.addEventListener('mousemove', updateFilters)
-    updateFilters()
-
-    function updateFilters(event) {
-      var filterVal = `hue-rotate(${Math.floor(hueVal / 15) % 360}deg)`
-      filterVal += `brightness(${brightnessVal}) contrast(${contrastVal}) blur(${blurVal}) saturate(110%) invert(${invertVal})`
-      video.style.filter = filterVal
-      hueVal--
-    }
-  </script>
-
-
+  <script src="bannerVideo.js"></script>
 </body>
 
 </html>
