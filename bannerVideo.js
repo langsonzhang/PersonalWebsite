@@ -5,8 +5,8 @@ var invertVal = 15
 var brightnessVal = 110
 
 var video = document.getElementById("video")
-var videoCont = document.getElementById("cont1")
-videoCont.addEventListener('mousemove', updateFilters)
+var overlay = document.getElementById("video-overlay")
+overlay.addEventListener('mousemove', updateFilters)
 updateFilters()
 
 function updateFilters(event) {
