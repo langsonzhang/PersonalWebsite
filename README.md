@@ -1,2 +1,6 @@
 # PersonalWebsite
-My website. View it at https://langsonzhang.github.io
+A simple website. View it at https://langsonzhang.github.io
+
+Planned improvements:
+- aesthetics
+- biography
